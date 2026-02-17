@@ -155,3 +155,11 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+monitoring:
+  enabled: true
+  # Viktig: må matche label-selector som Prometheus Operator bruker.
+  # For kube-prometheus-stack er det ofte release: <prometheus release name>
+  prometheusReleaseLabel: "kps"
+  interval: 15s
+  path: /metrics
