@@ -1,0 +1,10 @@
+replicaCount: 2
+
+config:
+  LOG_LEVEL: "info"
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 60
