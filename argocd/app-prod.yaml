@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/eyupyayan/Devops-App-Project.git
     targetRevision: master
-    path: charts/devops-app
+    path: devops-app
     helm:
       valueFiles:
         - env/values-prod.yaml
